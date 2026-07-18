@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>From Kadal
+  Do you love me?</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ====== HALAMAN UTAMA ====== -->
+  <div id="page-main" class="page active">
+    <div class="hearts-bg" aria-hidden="true"></div>
+
+    <div class="card">
+      <div class="emoji-top">🌸</div>
+      <h1 class="question">Dari kadalll<br /><em>Do you love me? XD</em></h1>
+
+      <!-- ✏️ TEMPAT GIF/VIDEO UTAMA — ganti src sesuai file kamu -->
+      <div class="media-slot" id="media-main">
+        <!-- <img
+          src="YOUR_GIF_HERE.gif"
+          alt="cute gif"
+          onerror="this.parentElement.classList.add('placeholder')"
+        /> -->
+        <!-- Kalau mau pakai VIDEO, hapus <img> di atas dan uncomment ini: -->
+        <video autoplay loop muted playsinline>
+          <source src="video1.mp4" type="video/mp4" />
+        </video>
+       
+        <span class="placeholder-text">🎞️ Taruh GIF / Video kamu di sini<br/><small>Ganti <code>YOUR_GIF_HERE.gif</code> di index.html</small></span>
+      </div>
+
+      <div class="buttons">
+        <button id="btn-yes" onclick="showYesPage()">IYAAA 💖</button>
+        <button id="btn-no">MASA NGGAK? 😢</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== HALAMAN SETELAH YES ====== -->
+  <div id="page-yes" class="page">
+    <div class="confetti-wrap" id="confetti-wrap" aria-hidden="true"></div>
+
+    <div class="card yes-card">
+      <div class="emoji-top">🎉</div>
+      <h1 class="yes-title">SUDAH KU DUGAAA :v</h1>
+      <p class="yes-subtitle">MAKASIHHHHHHHHH</p>
+
+      <div class="media-slot" id="media-yes">
+
+        <video autoplay loop muted playsinline>
+          <source src="video2.mp4" type="video/mp4" />
+        </video>
+       
+      </div>
+      <h1 class="yes-title">OKE SEKARANG BISA KELUARRR</h1>
+
+      
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
